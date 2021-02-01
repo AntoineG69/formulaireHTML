@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 20</title>
+    <link href="css/style20.css" media="screen" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css' />
+
+</head>
+
+
+
+
+<body>
+
+    <h1>Insciption</h1>
+
+    <form name="formulaire" method="GET" action="check.php">
+        <div >
+            <label for="nom">Nom <br></label>
+            <input name="nom" id="nom" type="text" pattern="[a-zA-Z]+" title="Que des lettres (A-z)" required><hr>
+        </div>
+
+        <div>
+            <label> Prénom<br>
+                <input name="prenom" pattern="[a-zA-Z]+" title="Que des lettres (A-z)" type="text" value="" required><hr>
+            </label>
+        </div>
+
+
+        <div>
+            <label> Date de naissance<br>
+                <input name="naissance" type="date" required><hr>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input class="sexe" name="sexe" type="radio" value="Homme" required>Homme
+            </label>
+
+            <label>
+                <input class="sexe" name="sexe" type="radio" value="Femme" required>Femme
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Pays<br>
+                <select name="choixpays">
+                    <option value="choix">Choissisez...</option>
+                    <option value="France">France</option>
+                    <option value="Inde">Inde</option>
+                    <option value="US">US</option>
+                    <option value="Russie">Russie</option>
+                </select><hr>
+            </label>
+        </div>
+
+        <div>
+            <label>Courrier<br><input name="mail" type="email" placeholder="" required><hr>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Mot de passe<br>
+                <input name="motdepasse" type="password"   pattern="[A-Za-z]+[@#%][1-9][0-9{3}]" title="Le mot de passe commence par une ou plusieurs lettres, puis
+                un unique caractère spécial (@,# ou %) et se termine par un
+                nombre avec au moins quatre chiffres ne commençant pas
+                par 0" required><hr>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Photo<br><input name="photo" type="file" accept="image/png, image/jpeg" required><hr>
+            </label>
+        </div>
+
+        <div>
+            <button type="submit" class="envoyer">Envoyer</button>
+            <button type="reset" class="reset">Effacer</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

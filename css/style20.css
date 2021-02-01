@@ -1,0 +1,55 @@
+body {
+    font-family: "Roboto Condensed";
+  }
+
+div{
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+input, select {
+    width: 150px;
+    border: none;
+}
+.sexe {
+    margin-left: 0px;
+    width: 30px;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+input:valid {
+    color: green;
+}
+
+input:invalid {
+
+    background: rgba(255, 51, 51, 0.26);
+}
+
+
+
+button {
+    margin-top: 15px;
+    width: 65px;
+    height: 35px;
+
+    color: white;
+    border: none;
+
+    border-radius: 2px;
+
+}
+.envoyer {
+    background-color: red;
+}
+
+.reset {
+    background: blue;
+}
